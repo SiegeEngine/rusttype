@@ -538,6 +538,10 @@ impl<'a> Font<'a> {
             .get_glyph_kern_advance(first.id().0, second.id().0);
         factor * kern as f32
     }
+
+    pub fn codepoint_iter(&self) -> tt::CodepointIter {
+        self.info.codepoint_iter()
+    }
 }
 #[derive(Clone)]
 pub struct GlyphIter<'a, I: Iterator>
