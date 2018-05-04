@@ -25,7 +25,7 @@ features = ["gpu_cache"]
 
 [dependencies]
 arrayvec = "0.4"
-stb_truetype = { git = "https://github.com/mikedilger/stb_truetype-rs" }
+stb_truetype = { git = "https://github.com/SiegeEngine/stb_truetype-rs" }
 ordered-float = "0.5"
 approx = "0.1"
 linked-hash-map = { version = "0.5", optional = true }
